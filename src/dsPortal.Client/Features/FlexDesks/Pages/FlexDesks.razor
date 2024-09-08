@@ -1,0 +1,18 @@
+﻿@page "/flexdesks/booking"
+
+@using MudBlazor
+
+<MudContainer>
+    <MudSelect @bind-Value="_location" Label="Location" Variant="Variant.Outlined">
+        <MudSelectItem Value="@("Zagreb")">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Coat_of_arms_of_Zagreb.svg" height="14" class="mr-1" /> Zagreb
+        </MudSelectItem>
+        <MudSelectItem Value="@("Osijek")">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Osijek.svg" height="14" class="mr-1" /> Osijek
+        </MudSelectItem>
+    </MudSelect>
+</MudContainer>
+
+@code {
+    string _location = "Zagreb";
+}
